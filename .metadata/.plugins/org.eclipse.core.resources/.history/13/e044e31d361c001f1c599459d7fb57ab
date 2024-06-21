@@ -1,0 +1,38 @@
+package dal;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import model.Loai_HH;
+
+public class DAO_Loai_HH extends ConnectDB {
+	// Select loại hàng hóa
+	public List<Loai_HH> selec_Loai_HH() {
+		List<Loai_HH> list = new ArrayList<>();
+		String sql = "SELECT * FROM LOAI_HH";
+		try {
+			PreparedStatement st = connection.prepareStatement(sql);
+			ResultSet rs = st.executeQuery();
+			while (rs.next()) {
+				Loai_HH nv = new Loai_HH(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4));
+				list.add(nv);
+			}
+		} catch (SQLException e) {
+			System.out.println(e);
+		}
+		return list;
+	}
+//	public static void main(String[] args) {
+//		DAO_Loai_HH d = new DAO_Loai_HH();
+//        List<Loai_HH> list = d.selec_Loai_HH();
+//        for (Loai_HH loai : list) {
+//        	System.out.println(loai.getMa_loai_hang());
+//        	System.out.println(loai.getAnh());
+//        	System.out.println(loai.getTen_loai_hang());
+//        	System.out.println(loai.getGhi_chu());
+//        }
+//	}
+}

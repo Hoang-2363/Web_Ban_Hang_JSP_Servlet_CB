@@ -1,0 +1,10 @@
+package test;
+
+import Test_01;
+
+public class Test {
+	public static void main(String[] args) {
+		Test_01 a = new Test_01(null, 0);
+		
+	}
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>QL_BH</display-name>
+  <welcome-file-list>
+    <welcome-file>page/index.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>HD_BH_XCT</display-name>
+    <servlet-name>HD_BH_XCT</servlet-name>
+    <servlet-class>admin.controller.HD_BH_XCT</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HD_BH_XCT</servlet-name>
+    <url-pattern>/HD_BH_XCT</url-pattern>
+  </servlet-mapping>
+</web-app>

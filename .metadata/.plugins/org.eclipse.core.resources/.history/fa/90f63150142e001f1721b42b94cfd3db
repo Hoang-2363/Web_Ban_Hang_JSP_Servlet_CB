@@ -1,0 +1,9 @@
+package test;
+
+
+public class Test {
+	public static void main(String[] args) {
+		Test_01 a = new Test_01("abc", 18);
+		System.out.println(a);
+	}
+}

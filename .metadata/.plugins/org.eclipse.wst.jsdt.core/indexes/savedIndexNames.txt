@@ -1,0 +1,11 @@
+INDEX VERSION 1.4+H:\Hoang\QL_BH_Java_Web\Lab_02\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1194623505.index
+3281511801.index
+3453545742.index
+2714847014.index
+1657330681.index
+16714379.index
+839639957.index
+784521929.index
+315900439.index
+2089709954.index

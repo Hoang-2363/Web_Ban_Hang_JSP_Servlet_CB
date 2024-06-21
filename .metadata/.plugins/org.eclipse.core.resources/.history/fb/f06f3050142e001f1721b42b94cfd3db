@@ -1,0 +1,16 @@
+package test;
+
+public class Test_01 {
+	private String name;
+	private int age;
+	
+	public Test_01(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	public void run() {
+		System.out.println("ABC");
+	}
+	 
+} 
